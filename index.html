@@ -3,16 +3,18 @@
 <head>
     <title>Todo App</title>
     <script src="https://unpkg.com/vue@2.5.21/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
 
     <div id="app">
         <h1>To do list</h1>
-        <input type="text" v-model="text" @keyup.enter="addItem(text)" autofocus="true">
+        <input type="text" v-model="text" @keyup.enter="addItem(text)" autofocus="true" ref="inputList">
         <button @click="addItem(text)">Add</button>
+        <button @click="deleteAll">Delete all</button>
 
         <ul>
-            <li v-for="(data, i) in list">{{i + 1}}. {{data}} <button @click="removeItem(i)">Delete</button></li>
+            <li v-for="(data, i) in list">{{i + 1}}. {{data}} <button @click="removeItem(i)"><span><i class="fas fa-times"></i></span></button></li>
         </ul>
 
     </div>
