@@ -7,8 +7,16 @@
 <body>
 
     <div id="app">
-        
+        <h1>To do list</h1>
+        <input type="text" v-model="text" @keyup.enter="addItem(text)" autofocus="true">
+        <button @click="addItem(text)">Add</button>
+
+        <ul>
+            <li v-for="(data, i) in list">{{i + 1}}. {{data}} <button @click="removeItem(i)">Delete</button></li>
+        </ul>
+
     </div>
     <script src="app.js"></script>
+
 </body>
 </html>
