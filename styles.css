@@ -1,0 +1,82 @@
+#app{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;   
+}
+
+.main{
+    display: flex;
+    /*background: #6ec1f8;*/
+    background: #c8f5fd;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+input {
+    border-radius: 2px;
+    padding: 0.3rem 0.3rem;
+}
+
+.addButton{
+    background: #209cee;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 0.4rem 0.4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 0.3rem;
+}
+
+.removeButton{
+    background: #ff3627;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 0.4rem 0.4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+ul li div {
+    display: inline-block;
+    background: #bdbdbd59;
+    border-radius: 5px;
+    padding: 3% 3% 3% 3%;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 1%;
+    font-size: 1.1rem;
+}
+
+li button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+li button span {
+    color: #ff0000;
+}
