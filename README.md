@@ -2,5 +2,5 @@
 
 ![](To-do-list.png)
 
-https://carb2750.github.io/To-do-list/
+[Live Demo](https://carb2750.github.io/To-do-list/)
 
